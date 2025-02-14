@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Practice Portfolio</title>
+  <link href="./output.css" rel="stylesheet">
+  <style>
+      *{    
+            /* overflow-x: hidden; */
+      }
+      body{
+           
+      }
+  </style>
+</head>
+<body>
+      <!-- Nav Section -->
+<nav  class="p-3 md:px-14 flex bg-amber-200 justify-between items-center">
+      <a class="flex items-center gap-0" href="#home"><img class="w-8" src="/src/public/v.png" alt=""><span class="text-2xl  opacity-70">ikram</span>
+      </a>
+
+      <div id="nav_menu" class="hidden md:flex gap-14 opacity-70">
+            <a href="#" >Home</a>
+            <a href="#" >Projects</a>
+            <a href="#" >Skills</a>
+            <a href="#" >About</a>
+            <a href="#" >Contact</a>
+      </div>
+      <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="text-2xl cursor-pointer font-light ri-menu-2-line"></i>
+      </button>
+
+      <div id="nav-dialog" class="fixed z-10 md:hidden bg-amber-200 inset-0 p-3">
+            <div id="nav_bar" class="flex justify-between">
+                  <a class="flex items-center gap-0" href="#home"><img class="w-[2rem]" src="/src/public/v.png" alt=""><span class="text-2xl  ">ikram</span>
+                  </a>
+                  <button class="p-2 md:hidden" onclick="handleMenu()">
+                        <i class="text-2xl cursor-pointer font-light ri-close-line"></i>
+                  </button>
+            </div>
+            <div class="mt-4">
+            <a href="#" class="m-3 p-3 font-medium block hover:bg-gray-100 rounded-4xl text-center">Home</a>
+            <a href="#" class="m-3 p-3 font-medium block hover:bg-gray-100 rounded-4xl text-center">Projects</a>
+            <a href="#" class="m-3 p-3 font-medium block hover:bg-gray-100 rounded-4xl text-center">Skills
+            <a href="#" class="m-3 p-3 font-medium block hover:bg-gray-100 rounded-4xl text-center">About</a>
+            <a href="#" class="m-3 p-3 font-medium block hover:bg-gray-100 rounded-4xl text-center">Contact</a>
+            </div>
+      </div>
+</nav>
+<!-- Home Section -->
+<section class="md:px-16 px-8 mt-9 md:flex justify-between items-end">
+      <div class="left_side">
+            <h2 class="font-semibold text-2xl">Hii I'm 👋</h2>
+            <h1 class="-mt-2.5 text-[4rem] h-full">Vikram.</h1>
+      </div>
+      <div class="right_side flex items-center gap-2 whitespace-nowrap">
+            <p class="text-xs md:text-xl">[06:30 AM]</p>
+            <div class=" h-px md:w-16 w-[2rem] bg-black"></div>
+            <h2 class="text-xs md:text-xl">Creative Frontend Developer</h2>
+      </div>
+</section>
+<!-- Banner image -->
+ <section class="p-6 md:p-14 mt-9">
+<div>
+      <img class="w-full rounded-2xl md:h-[30rem] object-cover" src="https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fG1hbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+</div>
+</section>
+ <!-- Home Page Part-2 -->
+  <section class="md:px-50 p-8 relative">
+      <h2 class="text-center font-semibold md:text-2xl mb-4">[ I design an build experiences ]</h2>
+     <p class="text-center px-2/3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptatibus molestias perferendis iste, cum culpa rem aliquam, dolores error, ex quo voluptas nisi suscipit qui! Assumenda nobis rerum totam explicabo sapiente voluptatum a ducimus eaque in numquam. Eius liudf porro iste, molestias deleniti..</p>
+
+      <div class="flex w-full flex-wrap justify-between mt-4  gap-8 overflow-y-hidden">
+
+      <img class="w-20 p-2 rotate-30 md:absolute top-0  left-30" src="/src/public/html.png" alt="">
+      <img class="w-20 p-2 rotate-30 md:absolute top-0 right-30" src="/src/public/css.png" alt="">
+      <img class="w-20 p-2 rotate-30" src="/src/public/javascript.png" alt="">
+      <img class="w-20 p-2 rotate-30"  src="/src/public/react.png" alt="">
+      <img class="w-20 p-2 rotate-30"  src="/src/public/tailwind.png" alt="">
+      <img class="w-20 p-2 rotate-30"  src="/src/public/visual-studio-code.png" alt="">
+</div>
+</section>
+
+  <!-- ===================== Project Section =========================-->
+
+  <section class=" w-full relative  ">
+
+      <div class="w-full px-6 sticky top-0 flex items-center gap-10  bg-white z-10 py-8">
+            <h1 class="text-3xl sm:text-[1rem] font-medium md:text-8xl md:p-15 pl-8">2017. </h1>
+            <div class="w-8 h-0.5 md:w-20 bg-black opacity-55 text-zinc-400"></div>
+            <h1 class="font-medium text-2xl md:text-8xl whitespace-nowrap opacity-55  text-zinc-400">The Beginning</h1>
+      </div>
+
+      <div class="image_content w-full flex justify-center flex-col md:flex-row md:justify-center gap-10  overflow-x-hidden">
+            <div class="col flex flex-col gap-10 md:gap-20 w-72 m-auto">
+                <div class="w-72 h-96 bg-gray-400"></div>
+                <div class="w-72 h-110 bg-red-400"></div>
+            </div>
+        
+            <div class="col flex flex-col gap-10 md:gap-20 w-72 pt-30 m-auto">
+                <div class="w-72 h-110 bg-gray-400"></div>
+                <div class="w-72 h-72 bg-red-400"></div>
+            </div>
+        
+            <div class="col flex flex-col gap-10 md:gap-20 w-72 pt-20 m-auto">
+                <div class="w-72 h-72 bg-gray-400"></div>
+                <div class="w-72 h-96 bg-red-400"></div> 
+            </div>
+        </div>
+     
+  </section>
+
+    <footer class="mt-[12rem]">
+      <div class="flex justify-between shadow-[0_-5px_10px_rgb(239,239,240)] p-3">
+            <p>&copy; 2025 All Right Reserved</p>
+            <p>Code by <a class="text-blue-500" target="_blank" href="https://github.com/VikramSingh39">Vikram Singh</a></p>
+      </div>
+    </footer>
+   
+    <script>
+      const nav_dialog = document.getElementById('nav-dialog');
+
+      function handleMenu(){
+      nav_dialog.classList.toggle('hidden');
+      }
+      handleMenu();
+    </script>
+</body>
+</html>
